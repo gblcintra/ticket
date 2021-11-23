@@ -12,13 +12,13 @@ export default function Header() {
 
   return (
     <>
+      <h1 className='header-desktop-title'>G&L</h1>
       <header className='header-desktop'>
-        <h1 className='header-desktop__title'>pandas</h1>
         <nav className='header-desktop__nav'>
-          <Link className='header-desktop__nav__link' to="#">First tab</Link>
-          <Link className='header-desktop__nav__link' to="#">Second tab</Link>
-          <Link className='header-desktop__nav__link' to="#">Third tab</Link>
-          <Link className='header-desktop__nav__link' to="#">Fourth tab</Link>
+          <Link className='header-desktop__nav__link' to="#">Home</Link>
+          <Link className='header-desktop__nav__link' to="#">Search</Link>
+          <Link className='header-desktop__nav__link' to="#">Notification</Link>
+          <Link className='header-desktop__nav__link' to="#">Settings</Link>
         </nav>
       </header>
       <header className='header-mobile'>

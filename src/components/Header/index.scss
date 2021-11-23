@@ -1,34 +1,21 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC");
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-body {
-  font: normal 18px "Open Sans", sans-serif;
-  background: #fafafa;
+.header-desktop-title {
+  font: normal 4em "Playfair Display SC", serif;
+  text-align: center;
   color: #333;
+  user-select: none;
+  transition: all .6s;
+  &:hover{
+    color: purple;
+  }
 }
 
-main {
-  // min-height: 100vh;
-}
 @media screen and (min-width: 800px) {
   // Desltop
   .header-desktop {
+    display: block;
     background: white;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     color: #333;
-    &__title {
-      font: normal 4em "Playfair Display SC", serif;
-      text-align: center;
-    }
     &__nav {
       max-width: 800px;
       margin: auto;
@@ -51,21 +38,34 @@ main {
           background: #333;
           transition: 0.7s transform cubic-bezier(0.06, 0.9, 0.28, 1);
         }
+        &:hover{
+          color:purple;
+
+        }
         &:hover::after {
           transform: scaleX(1);
+          background-color: purple;
         }
       }
     }
+  }
+  .header-mobile{
+    display: none;
   }
 }
 
 @media screen and (max-width: 800px) {
   //Mobile
   .header-mobile {
+    display: block;
     position: fixed;
     bottom: 0;
     right: 0;
     left: 0;
+    z-index: 2;
+  }
+  .header-desktop{
+    display: none;
   }
 
   .containers,
@@ -80,8 +80,7 @@ main {
   .containers {
     width: 100%;
     flex-direction: column;
-    gap: 20px;
-    padding: 5px 0 5px;
+    padding: 5px 0 3px 0;
   }
 
   .list {
@@ -89,7 +88,6 @@ main {
     max-width: 600px;
     height: 60px;
     padding: 10px;
-    gap: 5px;
     border-radius: 10px;
     background: #fff;
     box-shadow: 0px 3px 3px #aaa;
@@ -99,8 +97,6 @@ main {
       padding: 5px;
       .item-link {
         position: relative;
-
-        gap: 5px;
         color: #999;
         &.l5 {
           display: grid;
