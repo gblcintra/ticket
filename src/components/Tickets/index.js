@@ -1,14 +1,8 @@
 import './index.scss'
 
-const ticket = {
-    name: 'Gabriel',
-    lastname: 'Cintra',
-    section: 'Sessão 1',
-    movie: 'Matrix',
-    hours: '18:00'
-}
 
-const Ticket = () => {
+const Ticket = ({ ticket }) => {
+    console.log("💚🚀  ~ file: index.js ~ line 5 ~ Ticket ~ ticket", ticket)
 
     return (
         <div className='ticket'>
@@ -17,9 +11,9 @@ const Ticket = () => {
                 <div className='ticket__content-left__box'>
                     <div className='ticket__content-left__box__movie'>
                         <h2>
-                            {ticket.movie}
+                            {ticket.category}
                         </h2>
-                        <span>Filme</span>
+                        <span>Categoria</span>
                     </div>
                     <div className='ticket__content-left__box__name'>
                         <h2>
@@ -32,9 +26,9 @@ const Ticket = () => {
                             <h2>
                                 {ticket.section}
                             </h2>
-                            <span>Nome</span>
+                            <span>Sessão</span>
                         </div>
-                        <hr/>
+                        <hr />
                         <div className='ticket__content-left__box__section__hours'>
                             <h2>
                                 {ticket.hours}
@@ -47,7 +41,13 @@ const Ticket = () => {
             </div>
             <hr className="ticket__divider" />
             <div className='ticket__content-right'>
+                <div className='ticket__content-right__box'>
+                    <h2>
+                        {ticket.code}
+                    </h2>
+                    <span>Código</span>
 
+                </div>
             </div>
         </div>
     )

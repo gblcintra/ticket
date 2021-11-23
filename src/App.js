@@ -1,12 +1,23 @@
-import logo from './logo.svg';
 import './App.scss';
-import Ticket from './components/Tickets';
+import { BrowserRouter } from 'react-router-dom';
+
+// Import Alerts
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+// End Import Alerts
+
+// Import Routes
+import Routes from './routes';
+// End Import Routes
 
 function App() {
   return (
-    <div className="App">
-      <Ticket/>
-    </div>
+      <BrowserRouter>
+        {/* <div className="container"> */}
+        <Routes />
+        <ToastContainer position="top-right" autoClose={3000} />
+        {/* </div>      */}
+      </BrowserRouter>
   );
 }
 

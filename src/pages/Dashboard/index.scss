@@ -1,0 +1,29 @@
+.dashboard {
+    padding: 0 8px;
+}
+.tickets {
+    overflow: hidden;
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: linear-gradient(40deg, #ff8a8a 20%, #f771d1 40%, #a18aff 60%, #4cd2ff 80%, #6afc82 100%);
+        border-radius: 30px;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(40deg, #ff5757 20%, #ff61d0 40%, #9278fa 60%, #24c5ff 80%, #43f761 100%);
+    }
+    &::-webkit-scrollbar-track {
+        background: #ffffff;
+        border-radius: 0px;
+        box-shadow: inset 0px 0px 0px 0px #f0f0f0;
+    }
+    &__box {
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+    }
+}
