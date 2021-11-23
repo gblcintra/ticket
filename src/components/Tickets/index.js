@@ -2,8 +2,6 @@ import './index.scss'
 
 
 const Ticket = ({ ticket }) => {
-    console.log("💚🚀  ~ file: index.js ~ line 5 ~ Ticket ~ ticket", ticket)
-
     return (
         <div className='ticket'>
             <div className='ticket__content-left'>
