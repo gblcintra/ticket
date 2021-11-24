@@ -12,7 +12,7 @@ export default function Header() {
 
   return (
     <>
-      <h1 className='header-desktop-title'>G&L</h1>
+      <h1 className='header-desktop-title'>Ticket</h1>
       <header className='header-desktop'>
         <nav className='header-desktop__nav'>
           <Link className='header-desktop__nav__link' to="#">Home</Link>

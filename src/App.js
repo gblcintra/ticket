@@ -8,15 +8,17 @@ import 'react-toastify/dist/ReactToastify.css';
 
 // Import Routes
 import Routes from './routes';
+import Header from './components/Header';
+import Footer from './components/Footer';
 // End Import Routes
 
 function App() {
   return (
       <BrowserRouter>
-        {/* <div className="container"> */}
+        <Header />
         <Routes />
         <ToastContainer position="top-right" autoClose={3000} />
-        {/* </div>      */}
+        <Footer />
       </BrowserRouter>
   );
 }

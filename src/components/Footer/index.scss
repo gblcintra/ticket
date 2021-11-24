@@ -1,9 +1,32 @@
-
-.footer{
+.footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    code {
-        color: black;
+    padding: 16px;
+    margin: 16px -8px 0;
+    background-color: #000;
+    animation: identifier 2s infinite alternate both;
+    strong {
+        display: flex;
+        margin: auto;
+        text-align: center;
+        code {
+            // color: #fff;
+        }
+    }
+}
+
+@keyframes identifier {
+    0% {
+        background-color: rgb(255, 0, 0);
+        color: #000;
+    }
+    50% {
+        background-color: rgb(255, 255, 0);
+        color: #000;
+    }
+    100%{
+        background-color: rgb(0, 255, 255);
+        color: #000;
     }
 }

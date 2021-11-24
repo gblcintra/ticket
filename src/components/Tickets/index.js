@@ -5,7 +5,7 @@ const Ticket = ({ ticket }) => {
     return (
         <div className='ticket'>
             <div className='ticket__content-left'>
-                <h1 className='ticket__content-left__title-cine'>Casamento <span>Gabriel & Lauany</span></h1>
+                <h1 className='ticket__content-left__title-cine'>Cine<span>Max</span></h1>
                 <div className='ticket__content-left__box'>
                     <div className='ticket__content-left__box__movie'>
                         <h2>

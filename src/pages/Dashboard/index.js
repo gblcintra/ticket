@@ -6,8 +6,6 @@ import './index.scss'
 
 import LoadingComponents from '../../components/LodingComponents';
 import Title from '../../components/Title';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
 
 import Ticket from '../../components/Tickets';
 const tickets = [
@@ -72,9 +70,13 @@ export default function Dashboard() {
         });
       });
     }
-
+    
   }, [])
+  useEffect(()=>{
+    window.navigator.vibrate(200)
 
+  })
+  
   if (loading) {
     return (
       <div>
@@ -85,8 +87,6 @@ export default function Dashboard() {
 
   return (
     <div className='dashboard'>
-
-      <Header />
       <Title title="Dashboard" bodyClass="dashboard" />
       <div className="tickets">
         <div className='tickets__box'>
@@ -95,8 +95,6 @@ export default function Dashboard() {
           ))}
         </div>
       </div>
-      <Footer />
-
     </div>
   );
 }
